@@ -1,0 +1,8 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+    }
+}
+rootProject.name = 'spring-config-props-root'
+include 'spring-config-props-lib'
+include 'spring-config-props'

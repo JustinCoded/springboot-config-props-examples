@@ -1,0 +1,23 @@
+plugins {
+}
+
+apply plugin: 'io.spring.dependency-management'
+apply plugin: 'org.springframework.boot'
+
+group = 'com.justindoehling'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+    mavenCentral()
+}
+
+bootJar {
+    mainClassName = 'com.justindoehling.springconfigprops.SpringConfigPropsApplication'
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
+
+    implementation project(':spring-config-props-lib')
+}

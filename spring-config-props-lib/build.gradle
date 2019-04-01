@@ -1,0 +1,12 @@
+ext { springBootVersion = '2.1.3.RELEASE' } 
+
+group 'com.justindoehling'
+version '0.0.1-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencyManagement {
+    imports { mavenBom("org.springframework.boot:spring-boot-dependencies:${springBootVersion}") }
+}
